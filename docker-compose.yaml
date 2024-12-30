@@ -1,11 +1,12 @@
-version: '3.8'
+#version: '3.8'
 name: expense
 networks:
   default:
     name: expense
 volumes:
   mysql:
-    external: true # docker volume create mysql
+    external: true # id true, you need to create manually
+    # docekr volume create mysql
 services:
   mysql:
     image: mysql:v1.0
