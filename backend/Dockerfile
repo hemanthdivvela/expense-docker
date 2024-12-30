@@ -7,7 +7,7 @@ RUN chown expense:expense -R /opt/server
 #give ownership permissions
 WORKDIR /opt/server
 COPY package.json .
-COPY *.js .
+COPY *.js /opt/server/
 RUN npm install
 USER expense
 CMD [ "node", "index.js" ]
