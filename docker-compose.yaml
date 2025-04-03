@@ -10,7 +10,7 @@ volumes:
 services:
   mysql:
     #image: mysql:v1.0
-    image: hemanth765/mysql:v1.0
+    image: hemanth765/mysql:v1.0.0
     container_name: mysql # --name mysql
     environment:
       - MYSQL_ROOT_PASSWORD=ExpenseApp@1
